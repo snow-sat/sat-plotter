@@ -2,7 +2,7 @@
 
 import streamlit as st
 import pandas as pd
-#from PIL import Image
+from PIL import Image
 import datetime
 from plotly.subplots import make_subplots
 import plotly.express as px
@@ -287,8 +287,8 @@ earlier_date = now - interval
 current_str = now.strftime("%Y-%m-%d %H:%M:%S")
 earlier_str = earlier_date.strftime("%Y-%m-%d %H:%M:%S")
 
-#image = Image.open("ml.jpeg")
-#st.image(image, width=300, height=1200)
+image = Image.open("ml.jpeg")
+st.image(image, width=300, height=1200)
 
 #layout
 select_block_container_style()
